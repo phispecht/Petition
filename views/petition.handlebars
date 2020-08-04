@@ -1,0 +1,16 @@
+<h1>We want to get rid of this car</h1>
+<p>So please sign, otherwise our eyes will fall out:</p>
+<form id="form" action="/petition" method="POST">
+   <span id="signHere">Sign Here</span>
+      <canvas id="canvas"></canvas>
+      <input id="inputCanv" name="canvInputName" type="hidden"></input>
+      <input name="_csrf" value="{{ csrfToken }}" type="hidden"></input>
+      <div class="note">{{note1}}</div>
+    {{#if error}}
+      <div class="error">Something went wrong! It is totally your fault.</div>
+    {{/if}}
+   <button type="submit" name="submitButton">Submit</button>
+</form>
+<script type="text/javascript" src="/canvas.js"></script>
+
+

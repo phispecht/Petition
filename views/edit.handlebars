@@ -1,0 +1,21 @@
+<h1>Edit your Profile {{first}} {{last}}</h1>
+<form id="formEdit" method="POST">
+    <div class="col1">
+        <input name="firstEdit" placeholder="First Name" type="text" value="{{first}}">
+        <input name="lastEdit" placeholder="Last Name" type="text" value="{{last}}">
+    </div>
+    <input class="emailEdit" name="emailEdit" placeholder="Email" type="text" value="{{email}}">
+    <input class="passwordEdit" name="passwordEdit" placeholder="Password" type="password">
+    <input class="ageEdit" name="ageEdit" placeholder="Age" type="number" value="{{age}}">
+    <input class="cityEdit" name="cityEdit" placeholder="City" type="text" value="{{city}}">
+    <input class="homepageEdit" name="homepageEdit" placeholder="Homepage" type="url" value="{{homepage}}">
+    <input name="_csrf" value="{{ csrfToken }}" type="hidden"></input>
+    <br>
+   {{!--  <div class="error">{{noPermission}}</div> --}}
+    <div class="error">{{urlError}}</div>
+    <div class="note">{{note}}</div>
+    {{#if error}}
+        <div class="error">Something went wrong! It is totally your fault.</div>
+    {{/if}}
+    <button name="updateButton" type="submit">Update</button>
+</form>

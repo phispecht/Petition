@@ -1,0 +1,13 @@
+<h1>Now we would like to know a little bit more about yourself:</h1>
+<form id="formprofile" method="POST" action="/profile">
+    <input name="age" placeholder="Age" type="number">
+    <input name="city" placeholder="City" type="text">
+    <input name="homepage" placeholder="Homepage" type="text">
+    <input name="_csrf" value="{{ csrfToken }}" type="hidden"></input>
+    <br>
+    <div class="error">{{urlError}}</div>
+    {{#if error}}
+        <div class="error">Something went wrong! It is totally your fault.</div>
+    {{/if}}
+    <button name="profileButton" type="submit">Continue</button>
+</form>

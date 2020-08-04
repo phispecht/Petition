@@ -1,0 +1,10 @@
+<h1>Our Supporters</h1>
+<p>Here you can see who else did sign this petition:</p>
+<div id="signerId">
+    <div class="signer">
+    <table>
+        <tr><th>First Name</th><th>Last Name</th><th>Age</th><th>City</th></tr>
+{{#each namesSigners}}<tr><td>{{#if url}}<a href="{{url}}">{{/if}}{{first}}</a></td><td>{{#if url}}<a href="{{url}}">{{/if}}{{last}}</a></td><td>{{age}}</td><td><a href="/signers/{{city}}">{{city}}</a></td></tr>{{/each}}
+    </table>
+    </div>
+</div>

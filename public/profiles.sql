@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS user_profiles CASCADE;
+
+CREATE TABLE user_profiles(
+    id SERIAL PRIMARY KEY,
+    age INT DEFAULT NULL,
+    city VARCHAR(255) DEFAULT NULL,
+    url VARCHAR(255) DEFAULT NULL,
+    user_id INT NOT NULL UNIQUE REFERENCES users(id)
+);

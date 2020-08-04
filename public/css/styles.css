@@ -1,0 +1,168 @@
+body {
+    background-color: rgb(222, 233, 253);
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body section {
+    background-color: rgb(222, 233, 253);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    max-width: 1170px;
+    min-height: 70vh;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+footer {
+    margin-bottom: 15px;
+}
+
+footer .footer-content {
+    text-align: center;
+    margin-top: 70px;
+}
+
+button {
+    display: block;
+    width: 150px;
+    color: white;
+    background-color: #3f85cd;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    -webkit-box-shadow: 0px 3px 2px 1px rgb(0, 13, 134);
+    -moz-box-shadow: 0px 3px 2px 1px rgb(0, 13, 134);
+    box-shadow: 0px 3px 2px 1px rgb(0, 13, 134);
+}
+
+span {
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: rgb(1, 185, 16);
+    font-style: italic;
+}
+
+.sign {
+    width: 350px;
+    height: 150px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.error {
+    margin-top: 20px;
+    color: red;
+}
+
+canvas {
+    width: 300px;
+    height: 150px;
+    border: 1px dashed black;
+    background-image: url("/paper.jpg");
+}
+
+#signerId {
+    margin: 0 auto;
+    max-width: 600px;
+    margin-top: 50px;
+    background-color: rgba(52, 146, 235, 0.8);
+    padding: 20px;
+}
+
+#signerId td,
+#signerId th {
+    width: 100px;
+}
+
+#signerId table {
+    border-spacing: 10px;
+}
+
+.signer {
+    display: block;
+    text-align: left;
+}
+
+.signer:not(:first-child) {
+    margin-top: 20px;
+}
+
+#formRegistration input,
+#formLogin input,
+#formEdit input,
+#formprofile input {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #ecfaff;
+}
+
+#formRegistration .col1 input,
+#formEdit .col1 input {
+    display: inline-block;
+}
+
+#formRegistration .emailRegistration,
+#formRegistration .passwordRegistration,
+#formEdit .emailEdit,
+#formEdit .passwordEdit,
+#formEdit .ageEdit,
+#formEdit .cityEdit,
+#formEdit .homepageEdit {
+    width: 325px;
+}
+
+#formRegistration button,
+#formLogin button {
+    margin-bottom: 20px;
+}
+
+#nav {
+    margin-bottom: 70px;
+    background-color: #fc9d21;
+    padding: 8px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+#nav ul li {
+    display: inline-block;
+}
+
+#nav ul li:not(:first-child) {
+    margin-left: 30px;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.note {
+    margin-top: 20px;
+    color: green;
+}
+
+.delete a {
+    text-decoration: none;
+}
+
+.car img {
+    max-width: 400px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,11 @@
+<h1>Please log in to get access.</h1>
+<form id="formLogin" method="POST" action="/login">
+    <input name="emailLogin" placeholder="Email" type="text">
+    <input name="passwordLogin" placeholder="Password" type="password">
+    <input name="_csrf" value="{{ csrfToken }}" type="hidden"></input>
+    <br>
+    {{#if error}}
+      <div class="error">Something went wrong! It is totally your fault.</div>
+    {{/if}}
+    <button type="submit" name="loginButton">Log in</button>
+</form>

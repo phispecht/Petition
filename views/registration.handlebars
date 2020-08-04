@@ -1,0 +1,20 @@
+<h1>This petition is in favour of the abolition of the car "Fiat Multipla"</h1>
+<p>Therefore it should be signed to make the world a better place,<br>so now take a look at this beauty:</p>
+<div class="car"><img src="/multipla.jpg"></div>
+<form id="formRegistration" method="POST" action="/register">
+    <div class="col1">
+        <input name="first" placeholder="First Name" type="text">
+        <input name="last" placeholder="Last Name" type="text">
+    </div>
+    <input class="emailRegistration" name="emailRegistration" placeholder="Email" type="text">
+    <input class="passwordRegistration" name="passwordRegistration" placeholder="Password" type="password">
+    <input name="_csrf" value="{{ csrfToken }}" type="hidden"></input>
+    <br>
+    <div class="error">{{noPermission}}</div>
+    {{#if error}}
+        <div class="error">Something went wrong! It is totally your fault.</div>
+    {{/if}}
+    <button name="registrationButton" type="submit">Sign Up</button>
+</form>
+If you are already a member, please 
+<a href="/login">log in</a>
